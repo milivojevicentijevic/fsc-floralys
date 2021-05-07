@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300,400|Satisfy&display=swap');
+:root {
+    --roza: rgb(243, 191, 216);
+    --pink: #b01e73;
+    --zuta: rgb(217, 174, 70);
+    --svetlozuta: #ffda99;
+    --zelena: rgb(126, 126, 92);
+    --bela: rgb(255,255,255);
+    --siva: #555;
+    --transition: .4s linear;
+    --fontSize: 16px;
+    --fontFamily: 'Open Sans', sans-serif;
+    --fontHeadings: 'Fjalla One', sans-serif;
+    --fontLogo: 'Satisfy', cursive;
+}
+/***************************
+basic styles
+***************************/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: var(--fontSize);
+    font-family: var(--fontFamily);
+    background-image: linear-gradient(rgba(217, 174, 70,.9), rgba(243, 191, 216, .9)),url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding: 60px 0;
+    line-height: 1.6;
+    background-attachment: fixed;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fontHeadings);
+    color: var(--pink);
+}
+a {
+    text-decoration: none;
+    transition: var(--transition);
+}
+ul {
+    list-style: none;
+}
+/***************************
+grid
+***************************/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  [class*="col-"] {
+    float: left;
+  }
+  .col-1 {width: 8.333%;}
+  .col-2 {width: 16.666%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.333%;}
+  .col-5 {width: 41.666%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.333%;}
+  .col-8 {width: 66.666%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.333%;}
+  .col-11 {width: 91.666%;}
+  .col-12 {width: 100%;}
+/***************************
+main
+***************************/
+main {
+    width: 70%;
+    margin: auto;
+}
+/***************************
+aside
+***************************/
+aside {
+    position: relative;
+    right: -3%;
+}
+aside .logo {
+    color: var(--pink);
+    font-size: 4rem;
+    font-family: var(--fontLogo);
+}
+aside .logo:hover {
+    color: var(--bela);
+}
+nav {
+    background-color: var(--pink);
+    border: 10px solid rgba(255, 255, 255, .8);
+    padding: 30px;
+    border-radius: 0 30px;
+}
+nav ul li a {
+    color: var(--bela);
+    font-size: 1.4rem;
+}
+nav ul li a:hover {
+    color: var(--zuta);
+}
