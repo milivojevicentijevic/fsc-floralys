@@ -137,3 +137,35 @@ header img {
 footer {
     text-align: center;
 }
+
+/***************************
+responsive
+***************************/
+@media (min-width: 767px) and (max-width: 1040px) {
+    main {
+        width: 95%;
+    }
+    .blog .col-2,
+    .blog .col-10 {
+        width: 100%;
+    }
+    .blog .col-10 {
+        padding-left: 0;
+        padding-bottom: 30px;
+    }
+}
+@media (max-width: 767px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+    main {
+        width: 90%;
+    }
+    aside {
+        position: static;
+    }
+    .blog .col-10 {
+        padding-left: 0;
+        padding-bottom: 30px;
+    }
+}
