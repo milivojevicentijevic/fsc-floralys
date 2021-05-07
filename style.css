@@ -27,7 +27,6 @@ body {
     background-image: linear-gradient(rgba(217, 174, 70,.9), rgba(243, 191, 216, .9)),url(img/bg.jpg);
     background-position: center;
     background-size: cover;
-    height: 100vh;
     padding: 60px 0;
     line-height: 1.6;
     background-attachment: fixed;
@@ -100,4 +99,41 @@ nav ul li a {
 }
 nav ul li a:hover {
     color: var(--zuta);
+}
+/***************************
+section
+***************************/
+header img {
+    width: 100%;
+}
+.mainContent {
+    background-color: var(--svetlozuta);
+    border: 10px solid rgba(255, 255, 255, .8);
+    border-radius: 30px 0;
+    padding: 30px;
+}
+.mainContent article::after {
+    display: block;
+    content: "";
+    width: 100%;
+    background-color: var(--siva);
+    height: 1px;
+    margin: 20px 0;
+}
+.mainContent h2 {
+    font-size: 1.8rem;
+}
+/* blog */
+.blog img {
+    width: 100%;
+}
+.blog .col-10 {
+    padding-left: 30px;
+}
+.blog h4 {
+    font-size: 1.5rem;
+}
+/* footer */
+footer {
+    text-align: center;
 }
